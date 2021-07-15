@@ -30,7 +30,17 @@ Windowsではコマンドプロンプト、MACではターミナルを起動し�
 
 urlに指定するポート番号は、デフォルト52781になっていますが、変更したい場合は、docker-compose.ymlの設定を変更してください。
 
+またメールを送信するためには
 
+iris.scriptの以下の部分を変更する必要があります。
+
+set credential = ##class(Ens.Config.Credentials).%New()
+set credential.Username = "xxxxx"
+set credential.Password = "xxxxxx"
+set credential.SystemName = "yahoo email"
+set status = credential.%Save()
+
+さらに、
 ## アプリケーションの実行方法
 
 IRISの管理ポータルを開きます
