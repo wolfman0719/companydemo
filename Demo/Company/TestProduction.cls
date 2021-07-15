@@ -40,8 +40,8 @@ XData ProductionDefinition
     <Setting Target="Adapter" Name="SMTPPort">465</Setting>
     <Setting Target="Adapter" Name="SMTPServer">ybbsmtp.mail.yahoo.co.jp</Setting>
     <Setting Target="Adapter" Name="SSLConfig">MYSSL</Setting>
-    <Setting Target="Adapter" Name="From">satohiroshi1958@yahoo.co.jp</Setting>
-    <Setting Target="Adapter" Name="Recipient">satohiroshi2006@gmail.com</Setting>
+    <Setting Target="Adapter" Name="From">xxxxx@yahoo.co.jp</Setting>
+    <Setting Target="Adapter" Name="Recipient">xxxxx@gmail.com</Setting>
     <Setting Target="Adapter" Name="SSLCheckServerIdentity">0</Setting>
   </Item>
 </Production>
