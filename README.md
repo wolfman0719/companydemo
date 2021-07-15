@@ -1,10 +1,10 @@
 ## Companyデモ
 
-IRISのインターオペラビリティ機能を利用したマッシュアップデモ
-会社名を入力すると、その会社の基本情報と昨日の株価の終値を表示する
+- IRISのインターオペラビリティ機能を利用したマッシュアップデモ
+- 会社名を入力すると、その会社の基本情報と昨日の株価の終値を表示する
 
-基本情報は、データベースから取得
-株価は、ウェブサービスから取得する
+- 基本情報は、データベースから取得
+- 株価は、ウェブサービスから取得する
 
 ## 前提条件
 
@@ -34,14 +34,17 @@ urlに指定するポート番号は、デフォルト52781になっています
 
 iris.scriptの以下の部分を変更する必要があります。
 
+```
 set credential = ##class(Ens.Config.Credentials).%New()
 set credential.Username = "xxxxx"
 set credential.Password = "xxxxxx"
 set credential.SystemName = "yahoo email"
 set status = credential.%Save()
+```
 
 さらに、TestProduction.clsの以下の部分を環境に合わせて変更する必要があります。
 
+```
   <Item Name="Demo.Company.EmailOperation" Category="" ClassName="Demo.Company.EmailOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="Credentials">yahoo email</Setting>
     <Setting Target="Adapter" Name="SMTPPort">465</Setting>
@@ -51,7 +54,8 @@ set status = credential.%Save()
     <Setting Target="Adapter" Name="Recipient">xxxxx@gmail.com</Setting>
     <Setting Target="Adapter" Name="SSLCheckServerIdentity">0</Setting>
   </Item>
-  
+```
+
 ## アプリケーションの実行方法
 
 IRISの管理ポータルを開きます
