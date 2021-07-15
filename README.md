@@ -40,7 +40,18 @@ set credential.Password = "xxxxxx"
 set credential.SystemName = "yahoo email"
 set status = credential.%Save()
 
-さらに、
+さらに、TestProduction.clsの以下の部分を環境に合わせて変更する必要があります。
+
+  <Item Name="Demo.Company.EmailOperation" Category="" ClassName="Demo.Company.EmailOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="Credentials">yahoo email</Setting>
+    <Setting Target="Adapter" Name="SMTPPort">465</Setting>
+    <Setting Target="Adapter" Name="SMTPServer">ybbsmtp.mail.yahoo.co.jp</Setting>
+    <Setting Target="Adapter" Name="SSLConfig">MYSSL</Setting>
+    <Setting Target="Adapter" Name="From">xxxxx@yahoo.co.jp</Setting>
+    <Setting Target="Adapter" Name="Recipient">xxxxx@gmail.com</Setting>
+    <Setting Target="Adapter" Name="SSLCheckServerIdentity">0</Setting>
+  </Item>
+  
 ## アプリケーションの実行方法
 
 IRISの管理ポータルを開きます
