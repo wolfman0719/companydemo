@@ -1,0 +1,29 @@
+
+zn "%SYS"
+Do ##class(Security.Users).UnExpireUserPasswords("*")
+Do ##class(Config.NLS.Locales).Install("jpuw")
+Do ##class(%EnsembleMgr).EnableNamespace("USER")
+set ssl = ##class(Security.SSLConfigs).%New()
+set ssl.Name = "MYSSL"
+set status = ssl.%Save()
+
+zn "USER"
+set io = ##class(%SYS.NLS.Device).SetIO("UTF8")
+set credential = ##class(Ens.Config.Credentials).%New()
+set credential.Username = "_SYSTEM"
+set credential.Password = "SYS"
+set credential.SystemName = "system"
+set status = credential.%Save()
+
+set credential = ##class(Ens.Config.Credentials).%New()
+set credential.Username = "satohiroshi1958"
+set credential.Password = "Komayan3"
+set credential.SystemName = "yahoo email"
+set status = credential.%Save()
+
+do $System.OBJ.LoadDir("/opt/irisapp/src","ck",,1)
+set status = $SYSTEM.CSP.LoadPageDir("/csp/user")
+do ##class(Demo.Company).Init()
+set status = ##class(Ens.Director).SetAutoStart("Demo.Company.TestProduction")
+
+halt
