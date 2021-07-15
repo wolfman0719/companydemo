@@ -65,11 +65,12 @@ IRISの管理ポータルを開きます
 http://localhost:52781/csp/user/CompanyMain.csp?$NAMESPACE=USER&IRISUsername=_system&IRISPassword=SYS
 
 指定できる会社
-Intel
-Dell
-HP
-Microsoft
-IBM
+
+- Intel
+- Dell
+- HP
+- Microsoft
+- IBM
 
 ### 管理ポータル
 
@@ -79,10 +80,11 @@ IBM
 
 新しくデータをを再ロードするまえには、以下を実行してください。
 
+```
 >cd c:\
 >cd temp
 >cd companydemo
 >docker-compose stop
 >docker-compose rm
 yと答える
-
+```
