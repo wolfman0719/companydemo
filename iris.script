@@ -16,8 +16,8 @@ set credential.SystemName = "system"
 set status = credential.%Save()
 
 set credential = ##class(Ens.Config.Credentials).%New()
-set credential.Username = "satohiroshi1958"
-set credential.Password = "Komayan3"
+set credential.Username = "xxxxx"
+set credential.Password = "xxxxxx"
 set credential.SystemName = "yahoo email"
 set status = credential.%Save()
 
