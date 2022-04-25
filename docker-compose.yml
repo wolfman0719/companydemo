@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: companydemo
     restart: always
+    command: --check-caps false
     ports: 
       - 51781:1972
       - 52781:52773
