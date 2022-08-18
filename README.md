@@ -48,7 +48,7 @@ set status = credential.%Save()
   <Item Name="Demo.Company.EmailOperation" Category="" ClassName="Demo.Company.EmailOperation" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="Credentials">yahoo email</Setting>
     <Setting Target="Adapter" Name="SMTPPort">465</Setting>
-    <Setting Target="Adapter" Name="SMTPServer">ybbsmtp.mail.yahoo.co.jp</Setting>
+    <Setting Target="Adapter" Name="SMTPServer">smtp.mail.yahoo.co.jp</Setting>
     <Setting Target="Adapter" Name="SSLConfig">MYSSL</Setting>
     <Setting Target="Adapter" Name="From">xxxxx@yahoo.co.jp</Setting>
     <Setting Target="Adapter" Name="Recipient">xxxxx@gmail.com</Setting>
