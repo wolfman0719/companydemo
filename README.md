@@ -28,7 +28,7 @@ Windowsではコマンドプロンプト、MACではターミナルを起動し�
 ```
 を順番に実行してください。
 
-urlに指定するポート番号は、デフォルト52781になっていますが、変更したい場合は、docker-compose.ymlの設定を変更してください。
+urlに指定するポート番号は、デフォルト52773になっていますが、変更したい場合は、docker-compose.ymlの設定を変更してください。
 
 またメールを送信するためには
 
@@ -62,7 +62,7 @@ IRISの管理ポータルを開きます
 
 ブラウザで以下のurlを指定します。
 
-http://localhost:52781/csp/user/CompanyMain.csp?$NAMESPACE=USER&IRISUsername=_system&IRISPassword=SYS
+http://localhost:52773/csp/user/CompanyMain.csp?$NAMESPACE=USER&IRISUsername=_system&IRISPassword=SYS
 
 指定できる会社
 
@@ -74,7 +74,7 @@ http://localhost:52781/csp/user/CompanyMain.csp?$NAMESPACE=USER&IRISUsername=_sy
 
 ### 管理ポータル
 
-[localhost:52781/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS](http://localhost:52781/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS)
+[localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS](http://localhost:52773/csp/sys/%25CSP.Portal.Home.zen?IRISUsername=_system&IRISPassword=SYS)
 
 ## 環境の削除
 
