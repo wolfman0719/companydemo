@@ -9,10 +9,10 @@
 <BODY bgcolor=#CCCCFF>
 
 <STYLE type="text/css">
-	body { color: black; background: #CCCCFF; font-size: 12pt; font-family="Verdana,Arial,Helvetica,sans-serif"; }
-	.Small { font-size: 10pt;}
-	.DarkRow { background: #DDDDDD; }
-	.LightRow { background: #FFFFFF; }
+body { color: black; background: #CCCCFF; font-size: 12pt; font-family="Verdana,Arial,Helvetica,sans-serif"; }
+.Small { font-size: 10pt;}
+.DarkRow { background: #DDDDDD; }
+.LightRow { background: #FFFFFF; }
 </STYLE>
 </csr:section>
 <table bgcolor=#000088 cols=2 width=100% border=1 cellpadding=3>
@@ -28,8 +28,8 @@
 
 <center>
 <form name=theForm method=POST action=ShowInfo.csp>
-	会社名： <input type=text name=companyname>
-	<input type=submit>
+会社名： <input type=text name=companyname>
+<input type=submit>
 </form>
 </center>
 
